@@ -55,7 +55,7 @@ def mail(image):
 	s.starttls() 
 	  
 	# Authentication 
-	s.login(fromaddr, "Anik1973") 
+	s.login(fromaddr, frompass) 
 	  
 	# Converts the Multipart msg into a string 
 	text = msg.as_string() 
