@@ -62,7 +62,7 @@ def grab_contours(cnts):
 vs = cv2.VideoCapture(0)
 time.sleep(2)
 # initialize the first frame in the video stream
-for i in range(20):
+for i in range(50):
     ret, img = vs.read()
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     firstFrame = cv2.GaussianBlur(gray, (21, 21), 0)
